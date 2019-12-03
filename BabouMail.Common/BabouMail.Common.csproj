@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>ajtatum</Authors>
+    <Company>ajtatum</Company>
+    <Product>BabouMail Common</Product>
+    <Description>Library for BabouMail eternal libraries. Not to be used on it's own.</Description>
+    <PackageTags>babou baboumail</PackageTags>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>

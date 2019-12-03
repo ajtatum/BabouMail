@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>babou baboumail mailgun</PackageTags>
+    <PackageReleaseNotes>A simple C# wrapper for MailGun</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

@@ -14,6 +14,7 @@
     <Product>BabouMail SMTP</Product>
     <Company>ajtatum</Company>
     <Authors>ajtatum</Authors>
+    <PackageReleaseNotes>A simple C# wrapper for SMTP</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
