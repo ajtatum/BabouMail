@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Email.cs" />
+    <Compile Remove="EmailClient.cs" />
+    <Compile Remove="EmailMethod.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BabouExtensions" Version="1.2.28" />
+    <PackageReference Include="RestSharp" Version="106.6.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BabouMail.Common\BabouMail.Common.csproj" />
+  </ItemGroup>
+
+</Project>
