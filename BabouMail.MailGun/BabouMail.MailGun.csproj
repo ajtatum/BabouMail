@@ -1,14 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>ajtatum</Authors>
+    <Company>ajtatum</Company>
+    <Product>BabouMail MailGun</Product>
+    <Description>A simple C# wrapper for MailGun</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>babou baboumail mailgun</PackageTags>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Email.cs" />
-    <Compile Remove="EmailClient.cs" />
-    <Compile Remove="EmailMethod.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="BabouExtensions" Version="1.2.28" />

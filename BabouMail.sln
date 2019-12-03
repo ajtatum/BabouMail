@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabouMail.MailGun", "BabouM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabouMail.Common", "BabouMail.Common\BabouMail.Common.csproj", "{66A7555B-A6BD-4BF9-953D-C896FA592734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabouMail.SMTP", "BabouMail.SMTP\BabouMail.SMTP.csproj", "{67B46ED9-6D84-4513-805F-5560DD801D30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabouMail.Smtp", "BabouMail.Smtp\BabouMail.Smtp.csproj", "{67B46ED9-6D84-4513-805F-5560DD801D30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

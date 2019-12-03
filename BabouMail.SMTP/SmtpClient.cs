@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using BabouExtensions;
 using BabouMail.Common;
 
-namespace BabouMail.SMTP
+namespace BabouMail.Smtp
 {
     public class SmtpClient
     {

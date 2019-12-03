@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>BabouMail.Smtp</AssemblyName>
+    <RootNamespace>BabouMail.Smtp</RootNamespace>
+    <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>babou baboumail smtp</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
+    <Description>A simple C# wrapper for SMTP</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <Product>BabouMail SMTP</Product>
+    <Company>ajtatum</Company>
+    <Authors>ajtatum</Authors>
   </PropertyGroup>
 
   <ItemGroup>
