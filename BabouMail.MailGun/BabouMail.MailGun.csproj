@@ -13,6 +13,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>babou baboumail mailgun</PackageTags>
     <PackageReleaseNotes>A simple C# wrapper for MailGun</PackageReleaseNotes>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

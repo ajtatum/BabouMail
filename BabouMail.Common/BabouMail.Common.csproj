@@ -12,6 +12,8 @@
     <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
