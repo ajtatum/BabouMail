@@ -20,12 +20,12 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-      <DocumentationFile>obj\Debug\netstandard2.0\\BabouMail.Smtp.xml</DocumentationFile>
+      <DocumentationFile>obj\Debug\netstandard2.0\BabouMail.Smtp.xml</DocumentationFile>
       <OutputPath></OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-      <DocumentationFile>obj\Release\netstandard2.0\</DocumentationFile>
+      <DocumentationFile>obj\Release\netstandard2.0\BabouMail.Smtp.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
