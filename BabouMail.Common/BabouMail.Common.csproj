@@ -1,22 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <Description>The Common Library for BabouMail Senders.</Description>
+        <AssemblyTitle>BabouMail</AssemblyTitle>
+        <Product>BabouMail</Product>
+        <Title>BabouMail</Title>
         <Authors>ajtatum</Authors>
-        <Company>ajtatum</Company>
-        <Product>BabouMail Common</Product>
-        <Description>Library for BabouMail eternal libraries. Not to be used on it's own.</Description>
-        <PackageTags>babou baboumail</PackageTags>
-        <Copyright>Copyright 2019</Copyright>
+        <AssemblyName>BabouMail.Common</AssemblyName>
+        <RootNamespace>BabouMail.Common</RootNamespace>
+        <PackageTags>email;smtp;mailgun;babou;babou-email</PackageTags>
+        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/assets/Babou-100x100.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <FileVersion>1.1.0.0</FileVersion>
-        <PackageVersion>1.1.0</PackageVersion>
         <Version>1.1.0</Version>
+        <PackageVersion>1.1.0</PackageVersion>
         <NeutralLanguage>en-US</NeutralLanguage>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <DocumentationFile>obj\Release\netstandard2.0\BabouMail.Common.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DocumentationFile>obj\Debug\netstandard2.0\BabouMail.Common.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>

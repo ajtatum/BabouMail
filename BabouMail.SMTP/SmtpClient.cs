@@ -44,6 +44,11 @@ namespace BabouMail.Smtp
             SmtpSsl = smtpSsl;
         }
 
+        /// <summary>
+        /// Sends the email
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         public async Task<bool> SendMailAsync(Email email)
         {
             email.ThrowIfNull(nameof(email));

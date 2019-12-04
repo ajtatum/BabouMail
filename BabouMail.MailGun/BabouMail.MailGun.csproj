@@ -1,23 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <Title>BabouMail MailGun</Title>
+        <Description>A simple C# wrapper for MailGun using their REST API.</Description>
+        <AssemblyTitle>BabouMail - MailGun</AssemblyTitle>
+        <Product>BabouMail - MailGun</Product>
+        <Title>BabouMail - MailGun</Title>
         <Authors>ajtatum</Authors>
-        <Company>ajtatum</Company>
-        <Product>BabouMail MailGun</Product>
-        <Description>A simple C# wrapper for MailGun</Description>
-        <Copyright>Copyright 2019</Copyright>
+        <AssemblyName>BabouMail.MailGun</AssemblyName>
+        <RootNamespace>BabouMail.MailGun</RootNamespace>
+        <PackageTags>email;mailgun;babou;babou-email</PackageTags>
+        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/assets/Babou-100x100.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
-        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
         <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>babou baboumail mailgun</PackageTags>
-        <PackageReleaseNotes>A simple C# wrapper for MailGun</PackageReleaseNotes>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
         <PackageVersion>1.1.0</PackageVersion>
         <Version>1.1.0</Version>
         <NeutralLanguage>en-US</NeutralLanguage>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <DocumentationFile>obj\Release\netstandard2.0\BabouMail.MailGun.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>obj\Debug\netstandard2.0\BabouMail.MailGun.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>

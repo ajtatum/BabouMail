@@ -15,6 +15,13 @@ namespace BabouMail.MailGun
         private readonly string _domainName;
         private readonly RestClient _restClient;
 
+        /// <summary>
+        /// Initiate the MailGun Sender
+        /// </summary>
+        /// <param name="domainName">Domain Name registered with MailGun</param>
+        /// <param name="apiKey">ApiKey from MailGun</param>
+        /// <param name="mailGunRegion">The MailGun Region. Defaults to USA.</param>
+        /// <exception cref="ArgumentException"></exception>
         public MailGun(string domainName, string apiKey, MailGunRegion mailGunRegion = MailGunRegion.USA)
         {
             apiKey.ThrowIfNullOrEmpty(nameof(apiKey));
@@ -23,7 +30,7 @@ namespace BabouMail.MailGun
             _apiKey = apiKey;
             _domainName = domainName;
 
-            string url = string.Empty;
+            var url = string.Empty;
             switch (mailGunRegion)
             {
                 case MailGunRegion.USA:
@@ -43,6 +50,11 @@ namespace BabouMail.MailGun
             };
         }
 
+        /// <summary>
+        /// Sends the email.
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         public async Task<IRestResponse> SendMailAsync(Email email)
         {
             var request = new RestRequest();

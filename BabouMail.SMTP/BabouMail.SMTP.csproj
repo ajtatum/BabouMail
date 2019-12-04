@@ -1,25 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <Description>A simple C# wrapper for SMTP</Description>
+        <AssemblyTitle>BabouMail - SMTP</AssemblyTitle>
+        <Product>BabouMail - SMTP</Product>
+        <Title>BabouMail - SMTP</Title>
+        <Authors>ajtatum</Authors>
         <AssemblyName>BabouMail.Smtp</AssemblyName>
         <RootNamespace>BabouMail.Smtp</RootNamespace>
+        <PackageTags>smtp;email;babou;babou-email</PackageTags>
+        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/assets/Babou-100x100.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>babou baboumail smtp</PackageTags>
-        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/Babou.png</PackageIconUrl>
-        <Description>A simple C# wrapper for SMTP</Description>
-        <Copyright>Copyright 2019</Copyright>
-        <Product>BabouMail SMTP</Product>
-        <Company>ajtatum</Company>
-        <Authors>ajtatum</Authors>
-        <PackageReleaseNotes>A simple C# wrapper for SMTP</PackageReleaseNotes>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <FileVersion>1.1.0.0</FileVersion>
         <PackageVersion>1.1.0</PackageVersion>
         <Version>1.1.0</Version>
         <NeutralLanguage>en-US</NeutralLanguage>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>obj\Debug\netstandard2.0\\BabouMail.Smtp.xml</DocumentationFile>
+      <OutputPath></OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <DocumentationFile>obj\Release\netstandard2.0\</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
