@@ -1,40 +1,32 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using BabouMail.Common.Interfaces;
 using BabouMail.Common.Models;
 
-namespace BabouMail.Common
+namespace BabouMail.Common.Interfaces
 {
-    public interface IBabouEmail
-    {
+	public interface IBabouEmail
+	{
 		EmailData EmailData { get; set; }
-        IBabouSender Sender { get; set; }
+		IBabouSender Sender { get; set; }
 
         /// <summary>
+        /// Set the send from email address
+        /// </summary>
+        /// <param name="emailAddress">Email address of sender</param>
+        /// <param name="name">Name of sender</param>
+        /// <returns>Instance of the Email class</returns>
+        IBabouEmail From(string emailAddress, string name = null);
+
+		/// <summary>
 		/// Adds a recipient to the email, Splits name and address on ';'
 		/// </summary>
 		/// <param name="emailAddress">Email address of recipient</param>
 		/// <param name="name">Name of recipient</param>
 		/// <returns>Instance of the Email class</returns>
-        IBabouEmail To(string emailAddress, string name = null);
+		IBabouEmail To(string emailAddress, string name = null);
 
-		/// <summary>
-		/// Set the send from email address
-		/// </summary>
-		/// <param name="emailAddress">Email address of sender</param>
-		/// <param name="name">Name of sender</param>
-		/// <returns>Instance of the Email class</returns>
-		IBabouEmail SetFrom(string emailAddress, string name = null);
-
-		/// <summary>
-		/// Adds a recipient to the email
-		/// </summary>
-		/// <param name="emailAddress">Email address of recipient (allows multiple splitting on ';')</param>
-		/// <returns></returns>
-		IBabouEmail To(string emailAddress);
-
-		/// <summary>
+        /// <summary>
 		/// Adds all recipients in list to email
 		/// </summary>
 		/// <param name="mailAddresses">List of recipients</param>
@@ -110,7 +102,7 @@ namespace BabouMail.Common
 		/// </summary>
 		IBabouEmail LowPriority();
 
-        /// <summary>
+		/// <summary>
 		/// Adds an Attachment to the Email
 		/// </summary>
 		/// <param name="attachment">The Attachment to add</param>
@@ -148,19 +140,19 @@ namespace BabouMail.Common
 		/// <returns>Instance of the Email class</returns>
 		IBabouEmail Header(string header, string body);
 
-        /// <summary>
-        /// Sends email synchronously
-        /// </summary>
-        /// <returns>Instance of the Email class</returns>
-        SendResponse Send(CancellationToken? token = null);
+		/// <summary>
+		/// Sends email synchronously
+		/// </summary>
+		/// <returns>Instance of the Email class</returns>
+		SendResponse Send(CancellationToken? token = null);
 
-        /// <summary>
-        /// Sends email asynchronously
-        /// </summary>
-        /// <param name="token"></param>
-        /// <returns></returns>
-        Task<SendResponse> SendAsync(CancellationToken? token = null);
+		/// <summary>
+		/// Sends email asynchronously
+		/// </summary>
+		/// <param name="token"></param>
+		/// <returns></returns>
+		Task<SendResponse> SendAsync(CancellationToken? token = null);
 
-        bool IsValid();
+		bool IsValid();
     }
 }

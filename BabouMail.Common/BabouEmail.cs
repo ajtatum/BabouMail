@@ -55,28 +55,12 @@ namespace BabouMail.Common
         }
 
         /// <summary>
-        /// Creates a new Email instance and sets the from property
-        /// </summary>
-        /// <param name="emailAddress">Email address to send from</param>
-        /// <param name="name">Name to send from</param>
-        /// <returns>Instance of the Email class</returns>
-        public static IBabouEmail From(string emailAddress, string name = null)
-        {
-            var email = new BabouEmail
-            {
-                EmailData = { FromAddress = new Address(emailAddress, name ?? "") }
-            };
-
-            return email;
-        }
-
-        /// <summary>
         /// Set the send from email address
         /// </summary>
         /// <param name="emailAddress">Email address of sender</param>
         /// <param name="name">Name of sender</param>
         /// <returns>Instance of the Email class</returns>
-        public IBabouEmail SetFrom(string emailAddress, string name = null)
+        public IBabouEmail From(string emailAddress, string name = null)
         {
             EmailData.FromAddress = new Address(emailAddress, name ?? "");
             return this;
@@ -88,14 +72,14 @@ namespace BabouMail.Common
         /// <param name="emailAddress">Email address of recipient</param>
         /// <param name="name">Name of recipient</param>
         /// <returns>Instance of the Email class</returns>
-        public IBabouEmail To(string emailAddress, string name = null)
+        public IBabouEmail To(string emailAddress, string name)
         {
             if (emailAddress.Contains(";"))
             {
                 //email address has semi-colon, try split
-                var nameSplit = name?.Split(';') ?? new string[0];
+                var nameSplit = name.Split(';');
                 var addressSplit = emailAddress.Split(';');
-                for (int i = 0; i < addressSplit.Length; i++)
+                for (var i = 0; i < addressSplit.Length; i++)
                 {
                     var currentName = string.Empty;
                     if ((nameSplit.Length - 1) >= i)
@@ -121,7 +105,7 @@ namespace BabouMail.Common
         {
             if (emailAddress.Contains(";"))
             {
-                foreach (string address in emailAddress.Split(';'))
+                foreach (var address in emailAddress.Split(';'))
                 {
                     EmailData.ToAddresses.Add(new Address(address));
                 }

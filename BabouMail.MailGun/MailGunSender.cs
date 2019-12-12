@@ -2,7 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using BabouExtensions;
-using BabouMail.Common;
 using BabouMail.Common.Interfaces;
 using BabouMail.Common.Models;
 using Newtonsoft.Json;
