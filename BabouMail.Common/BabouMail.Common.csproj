@@ -8,7 +8,7 @@
         <Authors>ajtatum</Authors>
         <AssemblyName>BabouMail.Common</AssemblyName>
         <RootNamespace>BabouMail.Common</RootNamespace>
-        <PackageTags>email;smtp;mailgun;babou;babou-email</PackageTags>
+        <PackageTags>email;smtp;mailgun;fluent;babou;babou-email</PackageTags>
         <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/assets/Babou-100x100.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
@@ -17,18 +17,22 @@
         <PackageVersion>1.1.0</PackageVersion>
         <NeutralLanguage>en-US</NeutralLanguage>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageReleaseNotes>Restructured project to use a fluent code base.</PackageReleaseNotes>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
         <DocumentationFile>obj\Release\netstandard2.0\BabouMail.Common.xml</DocumentationFile>
+        <NoWarn>1701;1702;1591</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
         <DocumentationFile>obj\Debug\netstandard2.0\BabouMail.Common.xml</DocumentationFile>
+        <NoWarn>1701;1702;1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BabouExtensions" Version="1.2.28" />
+        <PackageReference Include="BabouExtensions" Version="1.2.29" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
     </ItemGroup>
 
 </Project>
