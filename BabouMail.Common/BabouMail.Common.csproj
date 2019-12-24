@@ -8,8 +8,8 @@
         <Authors>ajtatum</Authors>
         <AssemblyName>BabouMail.Common</AssemblyName>
         <RootNamespace>BabouMail.Common</RootNamespace>
-        <PackageTags>email;smtp;mailgun;fluent;babou;babou-email</PackageTags>
-        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/assets/Babou-100x100.png</PackageIconUrl>
+        <PackageTags>email smtp mailgun fluent babou babou-email</PackageTags>
+        <PackageIconUrl>https://raw.githubusercontent.com/ajtatum/BabouMail/master/assets/Babou.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/ajtatum/BabouMail</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajtatum/BabouMail</RepositoryUrl>
         <RepositoryType>git</RepositoryType>

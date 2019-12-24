@@ -28,11 +28,11 @@ View the NuGet at https://www.nuget.org/packages/BabouMail.Smtp/
 
 #### Developed by AJ Tatum
 
-[![ajt.io](https://img.icons8.com/clouds/50/000000/domain.png "ajt.io")](https://babou.io/aj)
-[![Facebook @ajtatum](https://img.icons8.com/clouds/50/000000/facebook-new.png "Facebook @ajtatum")](https://babou.io/fbaj)
-[![Twitter @ajtatum](https://img.icons8.com/clouds/50/000000/twitter.png "Twitter @ajtatum")](https://babou.io/twitteraj)
-[![LinkedIn @ajtatum](https://img.icons8.com/clouds/50/000000/linkedin.png "LinkedIn @ajtatum")](https://babou.io/linkedinaj)
-[![Spotify @ajtatum17](https://img.icons8.com/clouds/50/000000/spotify.png "Spotify @ajtatum17")](https://babou.io/spotifyaj)
-[![GitHub @ajtatum](https://img.icons8.com/clouds/50/000000/github.png "GitHub @ajtatum")](https://babou.io/githubaj)
+[![ajt.io](https://img.icons8.com/clouds/50/000000/domain.png "ajt.io")](https://s.babou.io/aj)
+[![Facebook @ajtatum](https://img.icons8.com/clouds/50/000000/facebook-new.png "Facebook @ajtatum")](https://s.babou.io/fbaj)
+[![Twitter @ajtatum](https://img.icons8.com/clouds/50/000000/twitter.png "Twitter @ajtatum")](https://s.babou.io/twitteraj)
+[![LinkedIn @ajtatum](https://img.icons8.com/clouds/50/000000/linkedin.png "LinkedIn @ajtatum")](https://s.babou.io/linkedinaj)
+[![Spotify @ajtatum17](https://img.icons8.com/clouds/50/000000/spotify.png "Spotify @ajtatum17")](https://s.babou.io/spotifyaj)
+[![GitHub @ajtatum](https://img.icons8.com/clouds/50/000000/github.png "GitHub @ajtatum")](https://s.babou.io/githubaj)
 
 [Icons by Icons8](https://icons8.com/)
